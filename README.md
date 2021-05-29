@@ -1,3 +1,3 @@
-# Jaqueflix
+# Jaqueline Fontes - CV Online
 
-Reprodução de página inicial com filmes e séries preferidos.
+Página com informações sobre projetos, experiências e habilidades. 

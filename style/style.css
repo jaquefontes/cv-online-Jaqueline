@@ -1,0 +1,335 @@
+:root {
+  --preta: #141414;
+  --azul: #10375d;
+  --vermelha: #c2331a;
+  --fundo-claro: #fefefa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*elementos base*/
+
+body {
+  background: var(--preta);
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+
+.subtitulo {
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--fundo-claro);
+
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+/*header*/
+
+header {
+  width: 100%;
+}
+
+header .menu {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  background: var(--preta);
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+header .jaque {
+  margin-left: 20px;
+  color: var(--fundo-claro);
+  font-family: "Arial Black", Times;
+  font-size: 20px;
+}
+
+header .jaque .fontes {
+  color: salmon;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #aaa;
+}
+
+/*principal*/
+
+.principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/fundo2.png");
+
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 20px;
+  /* colocar esse como -80px se quiser que ultrapasse o header, ficando por baixo dele */
+}
+
+.principal .container {
+  width: 60%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.principal .descricao,
+.principal .descricao2 {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-left: 6px;
+}
+
+.principal .posicao {
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.principal .titulo {
+  margin-top: 15%;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/*BOTÃO*/
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4%;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.botao1 {
+  background-color: cornsilk;
+  color: black;
+}
+
+.botao1 i {
+  color: black;
+}
+
+.botao:hover {
+  opacity: 0.8;
+}
+
+.botao1:hover,
+.botao-cv:hover {
+  opacity: 0.6;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.botao-cv {
+  margin: 1%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+}
+
+.item2:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*Itens / seções */
+
+/* projetos */
+.owl-carousel {
+  margin: 1%;
+}
+
+.item,
+.item2 {
+  width: 100%;
+  position: relative;
+}
+
+.link-github {
+  width: 100%;
+  height: 100%;
+}
+
+.link-github a {
+  color: white;
+}
+
+.link-github {
+  text-align: center;
+  padding: 14px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 500%;
+  top: 5%;
+  right: 35%;
+}
+
+.link-github a:hover {
+  color: salmon;
+}
+
+/* experiências e formação */
+
+.experiencias .container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.experiencias .container .experiencia {
+  width: 20em;
+  height: 8em;
+  background-color: var(--preta);
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 10px;
+  border: 3px solid salmon;
+}
+
+.experiencias .container .experiencia:hover {
+  border: 3px solid cornflowerblue;
+}
+
+.experiencia .empresa {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* formacao */
+
+.formacao-tech .container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.formacao-tech .container .formacao {
+  width: 20em;
+  height: 9em;
+  background-color: var(--preta);
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 10px;
+  border: 3px solid cornflowerblue;
+}
+
+.formacao-tech .container .formacao:hover {
+  border: 3px solid salmon;
+}
+
+.formacao .curso {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.formacao .curso:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: salmon;
+  margin: 8px auto;
+}
+
+.formacao .escola {
+  margin-bottom: 10px;
+}
+
+.formacao .data-curso {
+  font-size: 10px;
+}
+
+.cv {
+  display: inline-flex;
+}
+
+.cv p {
+  margin: 3% 1%;
+  font-weight: bold;
+}
+
+.cv p a {
+  color: cornflowerblue;
+}
+
+/*  pessoais */
+
+/* contato */
+
+.contato {
+  border-top: 2px solid cornflowerblue;
+}
+
+.contato .container-contato {
+  width: 100%;
+  padding: 50px;
+}
+
+.contato .container-contato ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.contato .container-contato ul a li {
+  color: #fefefa;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contato .container-contato ul a li:hover {
+  color: cornflowerblue;
+}
+
+.contato .container-contato ul a li:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: salmon;
+  margin: 8px auto;
+}

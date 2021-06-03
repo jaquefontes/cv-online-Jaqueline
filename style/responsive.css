@@ -1,4 +1,5 @@
 @media screen and (max-width: 1000px) {
+  /* header */
   header .container {
     display: flex;
     flex-direction: column;
@@ -39,6 +40,7 @@
     margin: 0px auto;
   }
 
+  /* principal */
   main .container .titulo {
     font-size: 30px;
     margin-top: 130px;
@@ -63,6 +65,7 @@
     width: 70%;
   }
 
+  /* botão */
   .botao {
     font-size: 12px;
     padding: 10px 10px;
@@ -70,6 +73,13 @@
     margin-bottom: 8px;
   }
 
+  .botao-cv {
+    width: 50%;
+    margin-left: 120px;
+    font-size: 15px;
+  }
+
+  /* experiências e formação */
   .experiencias .container {
     display: flex;
     flex-direction: column;
@@ -84,12 +94,7 @@
     margin: 20px;
   }
 
-  .botao-cv {
-    width: 50%;
-    margin-left: 120px;
-    font-size: 15px;
-  }
-
+  /* contato */
   .contato .container-contato ul {
     display: flex;
     flex-direction: column;

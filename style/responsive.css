@@ -1,10 +1,10 @@
 @media screen and (max-width: 1000px) {
   /* header */
+
   header .container {
     display: flex;
     flex-direction: column;
     height: 110px;
-    text-align: center;
   }
 
   header .jaque,
@@ -14,7 +14,7 @@
   }
 
   header .jaque {
-    margin-left: -19px;
+    margin-left: -180px;
   }
 
   .container .topicos-menu {
@@ -28,7 +28,7 @@
     display: block;
     float: left;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: left;
   }
 
   .container .topicos-menu a:after {
@@ -37,14 +37,14 @@
     width: 60px;
     height: 1px;
     background: salmon;
-    margin: 0px auto;
+    margin: 0px 2px;
   }
 
   /* principal */
   main .container .titulo {
     font-size: 30px;
     margin-top: 130px;
-    margin-left: 5px;
+    margin-left: 2%;
   }
 
   main .container .descricao {
@@ -103,5 +103,9 @@
   .contato .container-contato ul a li {
     font-size: 15px;
     padding: 10px;
+  }
+
+  .subtitulo {
+    margin-left: 5%;
   }
 }

@@ -17,7 +17,7 @@ a {
 
 body {
   background: var(--preta);
-  font-family: "Arial", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -57,8 +57,8 @@ header .container {
 header .jaque {
   margin-left: 20px;
   color: var(--fundo-claro);
-  font-family: "Arial Black", Times;
   font-size: 20px;
+  font-weight: 800;
 }
 
 header .jaque .fontes {

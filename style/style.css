@@ -54,14 +54,15 @@ header .container {
   margin-top: 10px;
 }
 
-header .jaque {
+header .titulo-topo {
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 20px;
   color: var(--fundo-claro);
   font-size: 20px;
   font-weight: 800;
 }
 
-header .jaque .fontes {
+header .titulo-topo .fontes {
   color: salmon;
 }
 

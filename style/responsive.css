@@ -1,26 +1,23 @@
 @media screen and (max-width: 1000px) {
   /* header */
 
-  header .container {
+  header .menu .container {
     display: flex;
     flex-direction: column;
     height: 110px;
   }
 
-  header .jaque,
-  header .fontes {
-    font-size: 20px;
+  header .titulo-topo {
+    font-size: 22px;
     margin-bottom: 8px;
-  }
-
-  header .jaque {
-    margin-left: -180px;
+    align-self: baseline;
   }
 
   .container .topicos-menu {
     font-size: 14px;
     padding: 5px;
-    margin-left: 30px;
+    align-self: baseline;
+    margin-left: 4%;
   }
 
   .container .topicos-menu a {
@@ -44,11 +41,6 @@
   main .container .titulo {
     font-size: 30px;
     margin-top: 130px;
-    margin-left: 2%;
-  }
-
-  main .container .descricao {
-    font-size: 15px;
   }
 
   main .container .descricao2 {
@@ -62,7 +54,8 @@
   }
 
   .principal .container {
-    width: 70%;
+    width: 80%;
+    margin-left: 3%;
   }
 
   /* botão */
@@ -106,6 +99,6 @@
   }
 
   .subtitulo {
-    margin-left: 5%;
+    margin-left: 3%;
   }
 }
